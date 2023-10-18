@@ -22,50 +22,38 @@ To create a student database and execute DDL queries using SQL.
 
 ## Query:
 ### 1) Create a database studentdb
-
-### SQL QUERY:
-
+### SQL QUERY:create database student_db;
 ### OUTPUT:
+![1](https://github.com/Reebak04/DBMS/assets/118364993/c15551ac-ef68-4663-a580-0c1fcbf8703c)
 
 ### 2) Create a table student with the following fieds RegisterNumber,Name,Age,Address,Phone number
-
-### SQL QUERY: 
-
-
+### SQL QUERY: create table student(Regno int,Name varchar(20),Age int,Address varchar(50),Phonenumber varchar(10));
 ### OUTPUT:
+![2](https://github.com/Reebak04/DBMS/assets/118364993/a5a4a3d5-2f02-4c59-8b01-42d1fb8aa565)
 
 ### 3) Alter the above student table by adding another attribute department
-
 ### SQL QUERY: 
-
+alter table student
+add dept varchar(20);
 ### OUTPUT:
-
+![3](https://github.com/Reebak04/DBMS/assets/118364993/95ed4b16-5903-4326-96d0-b4ace6ca3a1b)
 
 ### 4) Drop the student table
- 
-### SQL QUERY: 
-
-
+### SQL QUERY: drop table student;
 ### OUTPUT:
-
+![4](https://github.com/Reebak04/DBMS/assets/118364993/b32eeddc-b5ff-4f94-918e-931cd0bcf761)
 
 ### 5) Delete the student table using truncate keyword
-
-### SQL QUERY: 
-
-
+### SQL QUERY: truncate table student;
 ### OUTPUT:
-
-
+![5](https://github.com/Reebak04/DBMS/assets/118364993/8b5081e3-2a6b-469f-8372-2e610279df4c)
 
 ### 6) Rename the student table to mystudent
-
 ### SQL QUERY: 
-
-
-
+alter table student
+rename to mystudent;
 ### OUTPUT:
-
+![6](https://github.com/Reebak04/DBMS/assets/118364993/ba6203d6-1507-44ca-a3c2-de7e46d3c328)
 
 ## Result:
          Thus the basic DDL commands in SQL are executed. 
