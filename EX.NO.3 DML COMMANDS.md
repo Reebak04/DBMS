@@ -26,120 +26,122 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 ```
 
 ### Q1) Update all the records of manager table by increasing 10% of their salary as bonus.
-
 ### QUERY:
+```
 
-
+```
 ### OUTPUT:
+![image](https://github.com/Reebak04/DBMS/assets/118364993/d5d26bf7-0ef5-46b6-84c2-c62968b9d3c8)
 
 ### Q2) Delete the records from manager table where the salary less than 2750.
-
-
 ### QUERY:
-
-
+```
+delete from manager where salary < 2750;
+```
 ### OUTPUT:
+![image](https://github.com/Reebak04/DBMS/assets/118364993/b2218bd4-ca4f-4e09-988e-aa68fb90b190)
 
 ### Q3) Display each name of the employee as “Name” and annual salary as “Annual Salary” (Note: Salary in emp table is the monthly salary)
-
-
 ### QUERY:
-
-
+``` 
+```
 ### OUTPUT:
 
 ### Q5)	List the names of Clerks from emp table.
-
-
 ### QUERY:
-
-
+```
+select * from manager
+where designation = 'clerk';
+```
 ### OUTPUT:
-
+![image](https://github.com/Reebak04/DBMS/assets/118364993/2ea314f8-7533-47ee-ae2a-848637409483)
 
 ### Q6)	List the names of employee who are not Managers.
-
-
 ### QUERY:
-
-
+```
+select * from manager
+where designation != 'manager';
+```
 ### OUTPUT:
+![image](https://github.com/Reebak04/DBMS/assets/118364993/2739414c-a082-47b5-9104-6644e76be91b)
 
 
 ### Q7)	List the names of employees not eligible for commission.
-
-
 ### QUERY:
-
-
+```
+select * from manager
+where commission=0;
+```
 ### OUTPUT:
+![image](https://github.com/Reebak04/DBMS/assets/118364993/c4b5eeec-55d9-4ac4-8538-642417eb2045)
 
 
 ### Q8)	List employees whose name either start or end with ‘s’.
-
-
 ### QUERY:
-
-
+```
+select ename from manager
+where ename like('s%') or ename like('%s');
+```
 ### OUTPUT:
+![image](https://github.com/Reebak04/DBMS/assets/118364993/f041ba0e-8756-485d-9bec-406efd4765fa)
 
 
 ### Q9) Sort emp table in ascending order by hire-date and list ename, job, deptno and hire-date.
-
-
 ### QUERY:
+```
 
-
+```
 ### OUTPUT:
 
 
 ### Q10) List the Details of Employees who have joined before 30 Sept 81.
-
-
 ### QUERY:
+```
 
-
+```
 ### OUTPUT:
 
 
 ### Q11)	List ename, deptno and sal after sorting emp table in ascending order by deptno and then descending order by sal.
-
-
 ### QUERY:
+```
 
-
+```
 ### OUTPUT:
 
 
 ### Q12) List the names of employees not belonging to dept no 30,40 & 10
-
-
 ### QUERY:
-
-
+```
+select ename from manager
+where deptno != 30 and deptno != 40 and deptno != 10;
+```
 ### OUTPUT:
+![image](https://github.com/Reebak04/DBMS/assets/118364993/cbc33c9d-6e38-4f46-97d2-43cfb3ac2669)
 
 ### Q13) Find number of rows in the table EMP
-
 ### QUERY:
-
-
+```
+select count(enum) from manager;
+```
 ### OUTPUT:
-
+![image](https://github.com/Reebak04/DBMS/assets/118364993/66114e71-612c-42af-b5fa-b4486dbeea74)
 
 ### Q14) Find maximum, minimum and average salary in EMP table.
-
 ### QUERY:
-
-
+```
+select max(salary) from manager;
+select min(salary) from manager;
+select avg(salary) from manager;
+```
 ### OUTPUT:
-
+![image](https://github.com/Reebak04/DBMS/assets/118364993/3649365b-3cd8-4231-aa88-fae24a72d243)
 
 ### Q15) List the jobs and number of employees in each job. The result should be in the descending order of the number of employees.
-
 ### QUERY:
+```
 
-
+```
 ### OUTPUT:
 
 
